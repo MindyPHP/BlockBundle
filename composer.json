@@ -1,0 +1,8 @@
+{
+  "name": "mindy/block-bundle",
+  "autoload": {
+    "psr-4": {
+      "Mindy\\Bundle\\BlockBundle\\": ""
+    }
+  }
+}
