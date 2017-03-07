@@ -1,0 +1,3 @@
+block.admin.block.list: Текстовые блоки
+block.admin.block.create: Добавить текстовый блок
+block.admin.block.update: 'Редактирование текстового блока: %name%'
