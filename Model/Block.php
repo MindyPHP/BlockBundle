@@ -38,6 +38,6 @@ class Block extends Model
 
     public function __toString()
     {
-        return (string) $this->content;
+        return (string) $this->slug;
     }
 }

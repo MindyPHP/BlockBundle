@@ -4,5 +4,8 @@
     "psr-4": {
       "Mindy\\Bundle\\BlockBundle\\": ""
     }
+  },
+  "require": {
+    "mindy/ckeditor-bundle": "~3.0"
   }
 }

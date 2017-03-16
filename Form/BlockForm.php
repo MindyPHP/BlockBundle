@@ -8,6 +8,7 @@
 
 namespace Mindy\Bundle\BlockBundle\Form;
 
+use Ivory\CKEditorBundle\Form\Type\CKEditorType;
 use Mindy\Bundle\AdminBundle\Form\Type\ButtonsType;
 use Mindy\Bundle\BlockBundle\Model\Block;
 use Mindy\Bundle\FormBundle\Form\Type\SlugType;
@@ -28,8 +29,8 @@ class BlockForm extends AbstractType
                     new Alphanumeric()
                 ]
             ])
-            ->add('content', TextareaType::class, [
-                'label' => 'Описание вакансии',
+            ->add('content', CKEditorType::class, [
+                'label' => 'Содержимое',
             ])
             ->add('buttons', ButtonsType::class);
     }
