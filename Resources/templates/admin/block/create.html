@@ -1,0 +1,14 @@
+{% extends "admin/base.html" %}
+
+{% block breadcrumbs %}
+    {% set breadcrumbs = [
+        ['name' => 'Блоки', 'url' => url('admin_block_list')],
+        ['name' => 'Добавление блока']
+    ] %}
+    {% parent %}
+{% endblock %}
+
+{% block content %}
+    <h1 class="b-heading">Добавление блока</h1>
+    {{ form_render(form)|safe }}
+{% endblock %}

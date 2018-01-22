@@ -1,0 +1,23 @@
+admin_block_create:
+    path: /create
+    defaults:
+        _controller: \Mindy\Bundle\BlockBundle\Controller\Admin\BlockController::create
+
+admin_block_update:
+    path: /update/{id}
+    defaults:
+        _controller: \Mindy\Bundle\BlockBundle\Controller\Admin\BlockController::update
+    requirements:
+        id: \d+
+
+admin_block_remove:
+    path: /remove/{id}
+    defaults:
+        _controller: \Mindy\Bundle\BlockBundle\Controller\Admin\BlockController::remove
+    requirements:
+        id: \d+
+
+admin_block_list:
+    path: /list
+    defaults:
+        _controller: \Mindy\Bundle\BlockBundle\Controller\Admin\BlockController::list
